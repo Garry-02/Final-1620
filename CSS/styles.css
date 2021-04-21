@@ -54,6 +54,12 @@ footer {
     align-items: center;
 }
 
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cart-row > span {
     padding: 1.5rem;
 }
@@ -62,3 +68,29 @@ footer > p {
     color: #E0FFFF;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 640px){
+    .headerlist {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .headerlist > li {
+        padding-right: 3rem;
+    }
+
+    .shop-items {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .cart-row > span {
+        padding: 11rem;
+    }
+
+}
