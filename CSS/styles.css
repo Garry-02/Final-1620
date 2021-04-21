@@ -1,7 +1,64 @@
 *{
     font-family: 'RocknRoll One', sans-serif;
+    color: #8A2BE2;
 }
 
 h1 {
     font-family: 'Indie Flower', cursive;
+    color: #E0FFFF;
 }
+
+.container {
+    display : grid;
+    grid-template-rows: 10rem auto 3rem;
+    grid-template-areas: 
+        'h'
+        'm'
+        'f';
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area : h;
+    background-color: #87CEFA;
+}
+
+.band-name {
+    background-color: #4169E1;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    grid-area : m;
+    background-color: #87CEFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    grid-area: f;
+    background-color: #4169E1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.headerlist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.cart-row > span {
+    padding: 1.5rem;
+}
+
+footer > p {
+    color: #E0FFFF;
+}
+
