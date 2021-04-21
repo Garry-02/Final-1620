@@ -35,6 +35,10 @@ for (let name in albums) {
     document.getElementbyID(name).addEventListener("click", addtoCart(name));
 }
 
+
+/*          incomplete. 
 function addtoCart (name) [
-    const entry = document.createElement("li");
+    const entry = document.createElement("img");
+    entry.append()
 ]
+*/ 
