@@ -5,31 +5,16 @@ const albums = [
     { name: "Alumb 4", price: 19.99, inCart: false}
 ];
 
-function AddingImages () {
-/*    for (let name in albums) {
-        if (name == "Album 1") {
-            document.getElementById(name).src = "Images/Album1.png";
-        }
-        else if (name == "Album 2") {
-            document.getElementById(name).src = "Images/Album2.png";
-        }
-        else if (name == "Album 3") {
-            document.getElementById(name).src = "Images/Album3.png";
-        }
-        else if (name == "Album 4") {
-            document.getElementById(name).src = "Images/Album4.png";
-        }
-    }                   
-    Not working.
-*/
-    Album1 = document.getElementById("Album 1").src = "Images/Album1.png";
-    Album2 = document.getElementById("Album 2").src = "Images/Album2.png";
-    Album3 = document.getElementById("Album 3").src = "Images/Album3.png";
-    Album4 = document.getElementById("Album 4").src = "Images/Album4.png";
+const album_list = document.querySelectorAll('img.shop-item-image')
 
+function addingImage() {
+  for (let i = 0; i < album_list.length; i++) {
+      album_list[i].src =  'Images/Album' + (i+1) + '.png';
+  }
 }
 
-AddingImages();
+addingImage();
+
 
 for (let name in albums) {
     document.getElementbyID(name).addEventListener("click", addtoCart(name));
